@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1">
+    <tr th:each="dto: ${list}">
+        <td th:text="${dto.sno}">
+            [[${dto.sno}]]
+        </td>
+        <td th:text="${dto.first}">
+            [[${dto.first}]]
+        </td>
+        <td th:text="${dto.last}">
+            [[${dto.last}]]
+        </td>
+        <td th:text="${dto.regTime}">
+            [[${dto.regTime}]]
+        </td>
+    </tr>
+
+</table>
+<!--<ul>
+    <li th:each="dto: ${list}">
+        [[${dto}]]
+    </li>
+</ul>-->
+</body>
+</html>
